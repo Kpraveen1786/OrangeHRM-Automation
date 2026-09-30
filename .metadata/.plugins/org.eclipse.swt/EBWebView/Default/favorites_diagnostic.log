@@ -1,0 +1,29 @@
+2026-08-17 12:17:18.167: [INFO] CurrentProfilePath: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-17 12:17:18.168: [INFO] Profiles total count: 1
+2026-08-17 12:17:18.168: [INFO] Profile: name=Profile 1 path=D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=null
+2026-08-17 12:17:18.168: [INFO] LastUsedProfileDir: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-17 12:17:18.168: [INFO] OnDoneLoading sync enabled: 0
+2026-08-17 12:17:18.168: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-17 12:17:18.168: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-17 12:17:18.168: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-17 12:17:22.862: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-17 12:17:31.398: [INFO] CurrentProfilePath: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-17 12:17:31.398: [INFO] Profiles total count: 1
+2026-08-17 12:17:31.400: [INFO] Profile: name=Profile 1 path=D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-17T12:17:18.331Z
+2026-08-17 12:17:31.400: [INFO] LastUsedProfileDir: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-17 12:17:31.400: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-17T12:17:18.331Z
+2026-08-17 12:17:31.400: [INFO] OnDoneLoading sync enabled: 0
+2026-08-17 12:17:31.400: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-17 12:17:31.400: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-17 12:17:31.400: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-17 12:18:28.037: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-01 13:59:38.932: [INFO] CurrentProfilePath: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-01 13:59:38.932: [INFO] Profiles total count: 1
+2026-09-01 13:59:38.933: [INFO] Profile: name=Profile 1 path=D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-17T12:17:18.331Z
+2026-09-01 13:59:38.933: [INFO] LastUsedProfileDir: D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-09-01 13:59:38.933: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\OrangeHRM-Automation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-17T12:17:18.331Z
+2026-09-01 13:59:38.933: [INFO] OnDoneLoading sync enabled: 0
+2026-09-01 13:59:38.933: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-01 13:59:38.933: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-01 13:59:38.933: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-01 14:01:55.496: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
