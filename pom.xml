@@ -19,8 +19,8 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <selenium.version>4.22.0</selenium.version>
         <cucumber.version>7.18.1</cucumber.version>
@@ -157,9 +157,9 @@
 
                 <configuration>
 
-                    <source>17</source>
+                    <source>11</source>
 
-                    <target>17</target>
+                    <target>11</target>
 
                 </configuration>
 
