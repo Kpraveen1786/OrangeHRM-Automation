@@ -10,7 +10,7 @@
     <groupId>com.orangehrm</groupId>
     <artifactId>OrangeHRM-Automation</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    
 
     <name>OrangeHRM Automation Framework</name>
     <description>Enterprise Selenium Cucumber TestNG Framework</description>
