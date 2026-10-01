@@ -39,7 +39,7 @@ Feature: Employee Lifecycle Management in OrangeHRM
     Then application should logout successfully
     
     
-    @AddEmplooyeeWithLoginDetails
+    #@AddEmplooyeeWithLoginDetails
   Scenario: Create with Login Details search and delete employee successfully
 
     
