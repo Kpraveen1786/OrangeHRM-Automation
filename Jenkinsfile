@@ -22,10 +22,17 @@ pipeline {
         }
 
         stage('Report') {
-            steps {
-                echo 'Publishing test report...'
-            }
-        }
+		    steps {
+		        publishHTML([
+		            reportDir: 'test-output',
+		            reportFiles: 'ExtentReport.html',
+		            reportName: 'Extent Report',
+		            keepAll: true,
+		            alwaysLinkToLastBuild: true,
+		            allowMissing: false
+		        ])
+		    }
+		}
 
         stage('Deploy') {
             steps {
