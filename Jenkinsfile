@@ -35,10 +35,13 @@ pipeline {
 
         stage('Test') {
             steps {
-            	bat 'echo Environment: %TEST_ENV%'
-                bat 'echo Browser: %BROWSER%'
+            	bat 'echo test-output directory : %REPORT_DIR'
                 bat 'echo Project: %PROJECT_NAME%'
-                bat 'mvn test -DtestEnv=%TEST_ENV% -Dbrowser=%BROWSER%'
+                bat '''
+            		echo TEST_ENV=%TEST_ENV%
+            		echo BROWSER=%BROWSER%
+            		mvn test -DtestEnv=%TEST_ENV% -Dbrowser=%BROWSER%
+        		'''
             }
         }
 
