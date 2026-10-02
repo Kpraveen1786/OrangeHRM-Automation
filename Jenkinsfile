@@ -4,12 +4,12 @@ pipeline {
     parameters {
     	choice(
     		name: 'TEST_ENV',
-    		choice: ['QA', 'STAGE', 'PROD'],
+    		choices: ['QA', 'STAGE', 'PROD'],
     		description: 'Select Environment'
     	)
     	choice(
     		name: 'BROWSER',
-    		choice: ['chrome', 'edge'],
+    		choices: ['chrome', 'edge'],
     		description: 'Select Browser'
     	)
     }
