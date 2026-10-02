@@ -35,6 +35,18 @@ pipeline {
 
         stage('Test') {
             steps {
+            	withCredentials([
+                    usernamePassword(
+                        credentialsId: 'github-creds',
+                        usernameVariable: 'GIT_USER',
+                        passwordVariable: 'GIT_TOKEN'
+                    )
+                ]) {
+                    bat '''
+                        echo User: %GIT_USER%
+                        echo Token is available
+                    '''
+                }
             	bat 'echo test-output directory : %REPORT_DIR'
                 bat 'echo Project: %PROJECT_NAME%'
                 bat '''
