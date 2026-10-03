@@ -4,13 +4,27 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ConfigReader {
 
+	private static final Logger logger = LogManager.getLogger(ConfigReader.class);
 	private static final Properties properties = new Properties();
 
 	static {
 
 		try {
+			
+			String projectEnv = System.getenv("PROJECT_NAME");
+			String reportDir = System.getenv("REPORT_DIR");
+			String testEnv = System.getProperty("testEnv");
+			String browser = System.getProperty("browser");
+			
+			logger.info("project environmnet : "+projectEnv);
+			logger.info("reportDir : "+reportDir);
+			logger.info("TestEnv: "+testEnv);
+			logger.info("Browser: "+browser);
 
 			FileInputStream fis = new FileInputStream(
 					System.getProperty("user.dir") + "/src/test/resources/config/config.properties");

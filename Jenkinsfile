@@ -1,0 +1,89 @@
+pipeline {
+    agent any
+    
+    parameters {
+    	choice(
+    		name: 'TEST_ENV',
+    		choices: ['QA', 'STAGE', 'PROD'],
+    		description: 'Select Environment'
+    	)
+    	choice(
+    		name: 'BROWSER',
+    		choices: ['chrome', 'edge'],
+    		description: 'Select Browser'
+    	)
+    }
+    
+    environment {
+       PROJECT_NAME = 'OrangeHRM'
+       REPORT_DIR = 'test-output'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+            	withCredentials([
+                    usernamePassword(
+                        credentialsId: 'github-creds',
+                        usernameVariable: 'GIT_USER',
+                        passwordVariable: 'GIT_TOKEN'
+                    )
+                ]) {
+                    bat '''
+                        echo User: %GIT_USER%
+                        echo Token is available
+                    '''
+                }
+            	bat 'echo test-output directory : %REPORT_DIR'
+                bat 'echo Project: %PROJECT_NAME%'
+                bat '''
+            		echo TEST_ENV=%TEST_ENV%
+            		echo BROWSER=%BROWSER%
+            		mvn test -DtestEnv=%TEST_ENV% -Dbrowser=%BROWSER%
+        		'''
+            }
+        }
+
+        stage('Report') {
+		    steps {
+		        publishHTML([
+		            reportDir: 'test-output',
+		            reportFiles: 'ExtentReport.html',
+		            reportName: 'Extent Report',
+		            keepAll: true,
+		            alwaysLinkToLastBuild: true,
+		            allowMissing: false
+		        ])
+		    }
+		}
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully'
+        }
+
+        failure {
+            echo 'Pipeline failed'
+        }
+    }
+}
